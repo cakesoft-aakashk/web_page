@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Webpage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      padding: 20px;
+      background: #222;
+      color: white;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      min-height: 70vh;
+    }
+
+    .ytmVideoCoverThumbnail {
+      width: 100%;
+      max-width: 900px;
+      aspect-ratio: 16 / 9;
+      margin: 40px auto;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .ytmVideoCoverThumbnail iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: 0;
+    }
+
+    footer {
+      padding: 25px;
+      background: #222;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Static Webpage</h1>
+  </header>
+
+  <main>
+    <h2>Welcome</h2>
+    <p>This is a simple static webpage.</p>
+
+    <!-- YouTube video player -->
+    <div class="ytmVideoCoverThumbnail">
+      <iframe
+        src="https://www.youtube.com/embed/EPOYR0pqn2E?start=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Static Webpage</p>
+  </footer>
+
+</body>
+</html>
